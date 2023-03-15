@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function SingleVideo({ video ={} }) {
-  const {id, thumbnail,title,duration ,avatar,author} = video;
+  const {id, thumbnail,title,duration ,avatar,author,views,date} = video;
   return (
     <div className="col-span-12 sm:col-span-6 md:col-span-3 duration-300 hover:scale-[1.03]">
       <div className="w-full flex flex-col">
@@ -34,9 +34,9 @@ export default function SingleVideo({ video ={} }) {
               <p className="text-slate-900 text-sm font-semibold">{title }</p>
             </Link>
             <a className="text-gray-400 text-xs mt-2 hover:text-gray-600" href="#">
-              Learn with Sumit
+              {author}
             </a>
-            <p className="text-gray-400 text-xs mt-1">200 views . May 3, 2022</p>
+            <p className="text-gray-400 text-xs mt-1">{views} views . {date }</p>
           </div>
         </div>
       </div>
