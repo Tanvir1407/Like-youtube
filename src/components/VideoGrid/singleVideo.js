@@ -33,9 +33,9 @@ export default function SingleVideo({ video ={} }) {
             <Link to={`/videos/${id}`}>
               <p className="text-slate-900 text-sm font-semibold">{title }</p>
             </Link>
-            <a className="text-gray-400 text-xs mt-2 hover:text-gray-600" href="#">
+            <Link className="text-gray-400 text-xs mt-2 hover:text-gray-600" to="/">
               {author}
-            </a>
+            </Link>
             <p className="text-gray-400 text-xs mt-1">{views} views . {date }</p>
           </div>
         </div>
